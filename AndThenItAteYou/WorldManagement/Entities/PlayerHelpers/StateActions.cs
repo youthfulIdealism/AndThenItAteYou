@@ -1,0 +1,1 @@
+﻿public enum STATE_ACTIONS { RUN, JUMP, SWING, THROW, STAND}

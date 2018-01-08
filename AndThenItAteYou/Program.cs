@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Windows.Forms;
 
-namespace AndThenItAteYou
+namespace Survive
 {
 #if WINDOWS || LINUX
     /// <summary>
@@ -14,8 +15,13 @@ namespace AndThenItAteYou
         [STAThread]
         static void Main()
         {
-            using (var game = new Game1())
+            Application.EnableVisualStyles();
+            Application.Run(new Launcher());
+            /*using (var game = new Game1())
+            {
                 game.Run();
+            }*/
+                
         }
     }
 #endif
