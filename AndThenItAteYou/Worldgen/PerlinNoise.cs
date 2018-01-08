@@ -9,6 +9,11 @@ using System.Threading.Tasks;
 
 namespace Survive.Worldgen
 {
+    /**
+     * Perlin noise provider. Bits and pieces shamelessly pilfered from internet tutorials.
+     * 
+     * 
+     * */
     public class PerlinNoise
     {
         public const int octaves = 4;
